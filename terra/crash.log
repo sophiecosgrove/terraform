@@ -1,0 +1,285 @@
+2020/06/29 17:21:26 [INFO] Terraform version: 0.12.28  
+2020/06/29 17:21:26 [INFO] Go runtime version: go1.12.13
+2020/06/29 17:21:26 [INFO] CLI args: []string{"C:\\tools\\terraform\\terraform.exe", "destroy"}
+2020/06/29 17:21:26 [DEBUG] Attempting to open CLI config file: C:\Users\sophi\AppData\Roaming\terraform.rc
+2020/06/29 17:21:26 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/06/29 17:21:26 [INFO] CLI command args: []string{"destroy"}
+2020/06/29 17:21:26 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/06/29 17:21:26 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/06/29 17:21:26 [DEBUG] New state was assigned lineage "e99e0e14-32e3-d867-d375-a88de85f8eb5"
+2020/06/29 17:21:26 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/06/29 17:21:26 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/06/29 17:21:26 [DEBUG] checking for provider in "."
+2020/06/29 17:21:26 [DEBUG] checking for provider in "C:\\tools\\terraform"
+2020/06/29 17:21:26 [DEBUG] checking for provider in ".terraform\\plugins\\windows_amd64"
+2020/06/29 17:21:26 [DEBUG] found provider "terraform-provider-aws_v2.68.0_x4.exe"
+2020/06/29 17:21:26 [DEBUG] found valid plugin: "aws", "2.68.0", "C:\\Users\\sophi\\Documents\\QA\\terraform\\.terraform\\plugins\\windows_amd64\\terraform-provider-aws_v2.68.0_x4.exe"
+2020/06/29 17:21:26 [DEBUG] checking for provisioner in "."
+2020/06/29 17:21:26 [DEBUG] checking for provisioner in "C:\\tools\\terraform"
+2020/06/29 17:21:26 [DEBUG] checking for provisioner in ".terraform\\plugins\\windows_amd64"
+2020/06/29 17:21:26 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/06/29 17:21:26 [INFO] backend/local: starting Apply operation
+2020/06/29 17:21:26 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/06/29 17:21:26 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/06/29 17:21:26 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/06/29 17:21:26 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2020/06/29 17:21:26 [TRACE] statemgr.Filesystem: existing snapshot has lineage "faf6c1de-e9ed-2098-7016-a61fb95d0517" serial 3
+2020/06/29 17:21:26 [TRACE] statemgr.Filesystem: locking terraform.tfstate using LockFileEx
+2020/06/29 17:21:26 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/06/29 17:21:26 [TRACE] backend/local: reading remote state for workspace "default"
+2020/06/29 17:21:26 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2020/06/29 17:21:26 [TRACE] statemgr.Filesystem: read snapshot with lineage "faf6c1de-e9ed-2098-7016-a61fb95d0517" serial 3
+2020/06/29 17:21:26 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/06/29 17:21:26 [TRACE] backend/local: building context for current working directory
+2020/06/29 17:21:26 [TRACE] terraform.NewContext: starting
+2020/06/29 17:21:26 [TRACE] terraform.NewContext: resolving provider version selections
+2020/06/29 17:21:27 [TRACE] terraform.NewContext: loading provider schemas
+2020/06/29 17:21:27 [TRACE] LoadSchemas: retrieving schema for provider type "aws"
+2020-06-29T17:21:27.157+0100 [INFO]  plugin: configuring client automatic mTLS
+2020-06-29T17:21:27.195+0100 [DEBUG] plugin: starting plugin: path=C:\Users\sophi\Documents\QA\terraform\.terraform\plugins\windows_amd64\terraform-provider-aws_v2.68.0_x4.exe args=[C:\Users\sophi\Documents\QA\terraform\.terraform\plugins\windows_amd64\terraform-provider-aws_v2.68.0_x4.exe]
+2020-06-29T17:21:27.201+0100 [DEBUG] plugin: plugin started: path=C:\Users\sophi\Documents\QA\terraform\.terraform\plugins\windows_amd64\terraform-provider-aws_v2.68.0_x4.exe pid=16308
+2020-06-29T17:21:27.201+0100 [DEBUG] plugin: waiting for RPC address: path=C:\Users\sophi\Documents\QA\terraform\.terraform\plugins\windows_amd64\terraform-provider-aws_v2.68.0_x4.exe
+2020-06-29T17:21:27.275+0100 [INFO]  plugin.terraform-provider-aws_v2.68.0_x4.exe: configuring server automatic mTLS: timestamp=2020-06-29T17:21:27.273+0100
+2020-06-29T17:21:27.354+0100 [DEBUG] plugin: using plugin: version=5
+2020-06-29T17:21:27.354+0100 [DEBUG] plugin.terraform-provider-aws_v2.68.0_x4.exe: plugin address: network=tcp address=127.0.0.1:10000 timestamp=2020-06-29T17:21:27.354+0100
+2020/06/29 17:21:27 [TRACE] GRPCProvider: GetSchema
+2020-06-29T17:21:27.444+0100 [TRACE] plugin.stdio: waiting for stdio data
+2020/06/29 17:21:27 [TRACE] GRPCProvider: Close
+2020-06-29T17:21:27.538+0100 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2020-06-29T17:21:27.554+0100 [DEBUG] plugin: plugin process exited: path=C:\Users\sophi\Documents\QA\terraform\.terraform\plugins\windows_amd64\terraform-provider-aws_v2.68.0_x4.exe pid=16308
+2020-06-29T17:21:27.554+0100 [DEBUG] plugin: plugin exited
+2020/06/29 17:21:27 [TRACE] terraform.NewContext: complete
+2020/06/29 17:21:27 [TRACE] backend/local: finished building terraform.Context
+2020/06/29 17:21:27 [TRACE] backend/local: requesting interactive input, if necessary
+2020/06/29 17:21:27 [TRACE] Context.Input: Prompting for provider arguments
+2020/06/29 17:21:27 [TRACE] Context.Input: Provider provider.aws declared at main.tf:1,1-15
+2020/06/29 17:21:27 [TRACE] Context.Input: Input for provider.aws: map[string]cty.Value{}
+2020/06/29 17:21:27 [TRACE] backend/local: running validation operation
+2020/06/29 17:21:27 [INFO] terraform: building graph: GraphTypeValidate
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/06/29 17:21:27 [TRACE] ConfigTransformer: Starting for path: 
+2020/06/29 17:21:27 [TRACE] ConfigTransformer: Starting for path: aws_vpc
+2020/06/29 17:21:27 [TRACE] ConfigTransformer: Starting for path: aws_webserver_sg
+2020/06/29 17:21:27 [TRACE] ConfigTransformer: Starting for path: webserver_node
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  module.aws_vpc.aws_internet_gateway.vpc_igw - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_subnet.publicsubnet - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_vpc.VPC - *terraform.NodeValidatableResource
+  module.aws_webserver_sg.aws_wsg.wsg - *terraform.NodeValidatableResource
+  module.webserver_node.aws_instance.EC2Instance - *terraform.NodeValidatableResource
+  ------
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.OutputTransformer with new graph:
+  module.aws_vpc.aws_internet_gateway.vpc_igw - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_subnet.publicsubnet - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_vpc.VPC - *terraform.NodeValidatableResource
+  module.aws_vpc.output.publicsubnet_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.output.vpc_id - *terraform.NodeApplyableOutput
+  module.aws_webserver_sg.aws_wsg.wsg - *terraform.NodeValidatableResource
+  module.aws_webserver_sg.output.wsg_id - *terraform.NodeApplyableOutput
+  module.webserver_node.aws_instance.EC2Instance - *terraform.NodeValidatableResource
+  ------
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/06/29 17:21:27 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/06/29 17:21:27 [TRACE] AttachResourceConfigTransformer: attaching to "module.aws_vpc.aws_subnet.publicsubnet" (*terraform.NodeValidatableResource) config from VPC\main.tf:5,1-37
+2020/06/29 17:21:27 [TRACE] AttachResourceConfigTransformer: attaching to "module.aws_vpc.aws_internet_gateway.vpc_igw" (*terraform.NodeValidatableResource) config from VPC\main.tf:10,1-42
+2020/06/29 17:21:27 [TRACE] AttachResourceConfigTransformer: attaching to "module.aws_webserver_sg.aws_wsg.wsg" (*terraform.NodeValidatableResource) config from SG\main.tf:1,1-25
+2020/06/29 17:21:27 [TRACE] AttachResourceConfigTransformer: attaching to "module.webserver_node.aws_instance.EC2Instance" (*terraform.NodeValidatableResource) config from EC2\main.tf:1,1-38
+2020/06/29 17:21:27 [TRACE] AttachResourceConfigTransformer: attaching to "module.aws_vpc.aws_vpc.VPC" (*terraform.NodeValidatableResource) config from VPC\main.tf:1,1-25
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.RootVariableTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer with new graph:
+  module.aws_vpc.aws_internet_gateway.vpc_igw - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_subnet.publicsubnet - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_vpc.VPC - *terraform.NodeValidatableResource
+  module.aws_vpc.output.publicsubnet_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.output.vpc_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.var.publicsubnet_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_vpc.var.vpc_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.aws_wsg.wsg - *terraform.NodeValidatableResource
+  module.aws_webserver_sg.output.wsg_id - *terraform.NodeApplyableOutput
+  module.aws_webserver_sg.var.ingress_ports - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.name - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.open-internet - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.outbound-port - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.vpc_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.aws_instance.EC2Instance - *terraform.NodeValidatableResource
+  module.webserver_node.var.ami - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.associate_public_ip_address - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.type - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.vpc_security_group_ids - *terraform.NodeApplyableModuleVariable
+  ------
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/06/29 17:21:27 [TRACE] ProviderConfigTransformer: attaching to "provider.aws" provider configuration from main.tf:1,1-15
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  module.aws_vpc.aws_internet_gateway.vpc_igw - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_subnet.publicsubnet - *terraform.NodeValidatableResource
+  module.aws_vpc.aws_vpc.VPC - *terraform.NodeValidatableResource
+  module.aws_vpc.output.publicsubnet_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.output.vpc_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.var.publicsubnet_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_vpc.var.vpc_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.aws_wsg.wsg - *terraform.NodeValidatableResource
+  module.aws_webserver_sg.output.wsg_id - *terraform.NodeApplyableOutput
+  module.aws_webserver_sg.var.ingress_ports - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.name - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.open-internet - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.outbound-port - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.vpc_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.aws_instance.EC2Instance - *terraform.NodeValidatableResource
+  module.webserver_node.var.ami - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.associate_public_ip_address - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.type - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.vpc_security_group_ids - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  ------
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_webserver_sg.aws_wsg.wsg is provided by module.aws_webserver_sg.provider.aws or inherited equivalent
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_vpc.aws_vpc.VPC is provided by module.aws_vpc.provider.aws or inherited equivalent
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_vpc.aws_subnet.publicsubnet is provided by module.aws_vpc.provider.aws or inherited equivalent
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_vpc.aws_internet_gateway.vpc_igw is provided by module.aws_vpc.provider.aws or inherited equivalent
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.webserver_node.aws_instance.EC2Instance is provided by module.webserver_node.provider.aws or inherited equivalent
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_webserver_sg.aws_wsg.wsg uses inherited configuration provider.aws
+2020/06/29 17:21:27 [DEBUG] ProviderTransformer: "module.aws_webserver_sg.aws_wsg.wsg" (*terraform.NodeValidatableResource) needs provider.aws
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_vpc.aws_vpc.VPC uses inherited configuration provider.aws
+2020/06/29 17:21:27 [DEBUG] ProviderTransformer: "module.aws_vpc.aws_vpc.VPC" (*terraform.NodeValidatableResource) needs provider.aws
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_vpc.aws_subnet.publicsubnet uses inherited configuration provider.aws
+2020/06/29 17:21:27 [DEBUG] ProviderTransformer: "module.aws_vpc.aws_subnet.publicsubnet" (*terraform.NodeValidatableResource) needs provider.aws
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.aws_vpc.aws_internet_gateway.vpc_igw uses inherited configuration provider.aws
+2020/06/29 17:21:27 [DEBUG] ProviderTransformer: "module.aws_vpc.aws_internet_gateway.vpc_igw" (*terraform.NodeValidatableResource) needs provider.aws
+2020/06/29 17:21:27 [TRACE] ProviderTransformer: module.webserver_node.aws_instance.EC2Instance uses inherited configuration provider.aws
+2020/06/29 17:21:27 [DEBUG] ProviderTransformer: "module.webserver_node.aws_instance.EC2Instance" (*terraform.NodeValidatableResource) needs provider.aws
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  module.aws_vpc.aws_internet_gateway.vpc_igw - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_vpc.aws_subnet.publicsubnet - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_vpc.aws_vpc.VPC - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_vpc.output.publicsubnet_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.output.vpc_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.var.publicsubnet_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_vpc.var.vpc_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.aws_wsg.wsg - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_webserver_sg.output.wsg_id - *terraform.NodeApplyableOutput
+  module.aws_webserver_sg.var.ingress_ports - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.name - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.open-internet - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.outbound-port - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.vpc_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.aws_instance.EC2Instance - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.webserver_node.var.ami - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.associate_public_ip_address - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.type - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.vpc_security_group_ids - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  ------
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/06/29 17:21:27 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  module.aws_vpc.aws_internet_gateway.vpc_igw - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_vpc.aws_subnet.publicsubnet - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_vpc.aws_vpc.VPC - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_vpc.output.publicsubnet_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.output.vpc_id - *terraform.NodeApplyableOutput
+  module.aws_vpc.var.publicsubnet_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_vpc.var.vpc_cidr - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.aws_wsg.wsg - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.aws_webserver_sg.output.wsg_id - *terraform.NodeApplyableOutput
+  module.aws_webserver_sg.var.ingress_ports - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.name - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.open-internet - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.outbound-port - *terraform.NodeApplyableModuleVariable
+  module.aws_webserver_sg.var.vpc_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.aws_instance.EC2Instance - *terraform.NodeValidatableResource
+    provider.aws - *terraform.NodeApplyableProvider
+  module.webserver_node.var.ami - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.associate_public_ip_address - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.key_name - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.subnet_id - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.type - *terraform.NodeApplyableModuleVariable
+  module.webserver_node.var.vpc_security_group_ids - *terraform.NodeApplyableModuleVariable
+  provider.aws - *terraform.NodeApplyableProvider
+  ------
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/06/29 17:21:27 [ERROR] AttachSchemaTransformer: No resource schema available for module.aws_webserver_sg.aws_wsg.wsg
+2020/06/29 17:21:27 [TRACE] AttachSchemaTransformer: attaching resource schema to module.aws_vpc.aws_vpc.VPC
+2020/06/29 17:21:27 [TRACE] AttachSchemaTransformer: attaching resource schema to module.aws_vpc.aws_subnet.publicsubnet
+2020/06/29 17:21:27 [TRACE] AttachSchemaTransformer: attaching resource schema to module.aws_vpc.aws_internet_gateway.vpc_igw
+2020/06/29 17:21:27 [TRACE] AttachSchemaTransformer: attaching resource schema to module.webserver_node.aws_instance.EC2Instance
+2020/06/29 17:21:27 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.aws
+2020/06/29 17:21:27 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/06/29 17:21:27 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/06/29 17:21:27 [WARN] no schema is attached to module.aws_webserver_sg.aws_wsg.wsg, so config references cannot be detected
+2020/06/29 17:21:27 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2020/06/29 17:21:27 [TRACE] statemgr.Filesystem: unlocked by closing terraform.tfstate
+panic: runtime error: invalid memory address or nil pointer dereference
+[signal 0xc0000005 code=0x0 addr=0x8 pc=0xe1cdc5]
+
+goroutine 24 [running]:
+github.com/hashicorp/terraform/lang/blocktoattr.walkVariables(0x24b3500, 0xc00001f6b0, 0x0, 0xc0000b0001, 0x24b3500, 0xc00001f6b0, 0x0, 0x0, 0x0, 0x6c)
+	/home/circleci/project/project/lang/blocktoattr/variables.go:34 +0x1b5
+github.com/hashicorp/terraform/lang/blocktoattr.ExpandedVariables(...)
+	/home/circleci/project/project/lang/blocktoattr/variables.go:24
+github.com/hashicorp/terraform/lang.ReferencesInBlock(0x24b3500, 0xc00001f6b0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xc000df18f0)
+	/home/circleci/project/project/lang/references.go:68 +0x6d
+github.com/hashicorp/terraform/terraform.(*NodeAbstractResource).References(0xc000afe410, 0x0, 0x0, 0x0)
+	/home/circleci/project/project/terraform/node_resource_abstract.go:195 +0x344
+github.com/hashicorp/terraform/terraform.NewReferenceMap(0xc000cde160, 0x16, 0x16, 0x16)
+	/home/circleci/project/project/terraform/transform_reference.go:492 +0x251
+github.com/hashicorp/terraform/terraform.(*ReferenceTransformer).Transform(0x36c6ab0, 0xc0003a2e60, 0x14, 0x0)
+	/home/circleci/project/project/terraform/transform_reference.go:79 +0x78
+github.com/hashicorp/terraform/terraform.(*BasicGraphBuilder).Build(0xc000a838e8, 0x0, 0x0, 0x0, 0x36a8c40, 0xc000a83918, 0x4fbd37, 0xc0000b0000)
+	/home/circleci/project/project/terraform/graph_builder.go:50 +0x47e
+github.com/hashicorp/terraform/terraform.(*PlanGraphBuilder).Build(0xc00024a150, 0x0, 0x0, 0x0, 0x1, 0x2023c00, 0xc0001a7201, 0xc000a83978)
+	/home/circleci/project/project/terraform/graph_builder_plan.go:65 +0xc3
+github.com/hashicorp/terraform/terraform.(*Context).Graph(0xc0003d61e0, 0x6, 0xc000a8396e, 0xc0005bbe00, 0x47, 0x14, 0xbfb6a321e108c278)
+	/home/circleci/project/project/terraform/context.go:292 +0x1bf
+github.com/hashicorp/terraform/terraform.(*Context).Validate(0xc0003d61e0, 0x0, 0x0, 0x0)
+	/home/circleci/project/project/terraform/context.go:675 +0xd0
+github.com/hashicorp/terraform/backend/local.(*Local).context(0xc000108d00, 0xc000286ee0, 0x1, 0x1, 0x3, 0xc000493c80, 0x1, 0x3, 0xc0000c9ce0)
+	/home/circleci/project/project/backend/local/backend_local.go:120 +0x97b
+github.com/hashicorp/terraform/backend/local.(*Local).opApply(0xc000108d00, 0x24b2b00, 0xc00052d600, 0x24b2b00, 0xc00052d640, 0xc000286ee0, 0xc00052d5c0)
+	/home/circleci/project/project/backend/local/backend_apply.go:53 +0x2eb
+github.com/hashicorp/terraform/backend/local.(*Local).Operation.func1(0xc00051b780, 0xc00051b790, 0xc00051b7a0, 0xc000286ee0, 0xc000108d00, 0xc00052d5c0, 0xc00051b770, 0x24b2b00, 0xc00052d600, 0x24b2b00, ...)
+	/home/circleci/project/project/backend/local/backend.go:350 +0x13c
+created by github.com/hashicorp/terraform/backend/local.(*Local).Operation
+	/home/circleci/project/project/backend/local/backend.go:334 +0x372
